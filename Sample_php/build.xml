@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<project name="Ant-Test" default="Main" basedir=".">
+    <!-- Sets variables which can later be used. -->
+    <!-- The value of a property is accessed via ${} -->
+    <property name="src.dir" location="src" />
+    <property name="lib.dir" location="lib" />
+    <property name="build.dir" location="build" />
+    <property name="selenium_server_standalone_2_30_0_jar" value="/Users/Vinothini/Downloads/selenium-server-standalone-2.42.2.jar"/>
+    
+    <property name="out" value="out"/>
+    <property name="reports.out" value="${out}/reports"/>
+    <property name="junit.out" value="${reports.out}/junit"/>
+    <property name="haltonfailure" value="no"/>
+    
+    <!--
+     Create a classpath container which can be later used in the ant task
+     -->
+    <path id="build.classpath">
+        <pathelement location="${build.dir}"/>
+        <file file="${selenium_server_standalone_2_30_0_jar}"/>
+        <!--<fileset dir="${lib.dir}">
+         <include name="**/*.jar" />
+         </fileset>-->
+    </path>
+    
+    <!-- Deletes the existing build directory-->
+    <target name="clean">
+        <delete dir="${build.dir}" />
+        <delete dir="${out}" />
+    </target>
+    
+    <!-- Creates the  build  directory-->
+    <target name="makedir">
+        <mkdir dir="${build.dir}" />
+        <mkdir dir="${out}" />
+        <mkdir dir="${reports.out}" />
+        <mkdir dir="${junit.out}" />
+    </target>
+    
+    <!-- Compiles the java code -->
+    <target name="build" depends="clean, makedir">
+        <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="build.classpath" />
+    </target>
+    
+    <target name="run-junit" depends="build" description="run command-line example">
+        <!--<java classname="com.survivalfootball.seleniumtest.regUnitTest" failonerror="true" classpathref="build.classpath" />-->
+        
+        <!-- run junit thru Ant and do batchtest to all junit files -->
+        <junit printsummary="yes" haltonfailure="${haltonfailure}">
+            <classpath>
+                <pathelement location="${build.dir}"/>
+                <file file="${selenium_server_standalone_2_30_0_jar}"/>
+            </classpath>
+            <formatter type="plain"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="${junit.out}">
+                <fileset dir="${src.dir}">
+                    <include name="**/*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <!-- create junit report -->
+        <junitreport todir="${junit.out}">
+            <fileset dir="${junit.out}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="${junit.out}" format="frames"/>
+        </junitreport>
+    </target>
+    
+    <!-- run everything including clean up, build to compile and run test -->
+    <target name="all" description="Executes the full">
+        <antcall target="clean" />
+        <antcall target="build" />
+        <antcall target="run-junit" />
+    </target>
+    
+    <target name="Main" depends="run-junit">
+        <description>Main target</description>
+    </target>
+    
+</project>

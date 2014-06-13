@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="naveen.local" id="0" name="ibiz_selenium" package="" skipped="0" tests="1" time="40.903" timestamp="2014-06-13T04:50:04">
+      <properties>
+          <property name="java.vendor" value="Apple Inc." />
+
+          <property name="lib.dir" value="/Users/Vinothini/Downloads/Old systemjenkins proj/PHP.sample1/Sample_php/lib" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="jikes.class.path" value=":/Library/Java/Home/../Classes/alt-rt.jar:/Library/Java/Home/../Classes/alt-string.jar:/Library/Java/Home/../Classes/charsets.jar:/Library/Java/Home/../Classes/classes.jar:/Library/Java/Home/../Classes/dt.jar:/Library/Java/Home/../Classes/jce.jar:/Library/Java/Home/../Classes/jconsole.jar:/Library/Java/Home/../Classes/jsse.jar:/Library/Java/Home/../Classes/management-agent.jar:/Library/Java/Home/../Classes/ui.jar" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="https.proxyHost" value="192.168.3.1" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar" />
+
+          <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="ant.home" value="/Users/Vinothini/apache-ant-1.9.3" />
+
+          <property name="java.runtime.version" value="1.6.0_65-b14-462-11M4609" />
+
+          <property name="selenium_server_standalone_2_30_0_jar" value="/Users/Vinothini/Downloads/selenium-server-standalone-2.42.2.jar" />
+
+          <property name="http.proxyPort" value="8080" />
+
+          <property name="user.name" value="Vinothini" />
+
+          <property name="awt.nativeDoubleBuffering" value="true" />
+
+          <property name="build.dir" value="/Users/Vinothini/Downloads/Old systemjenkins proj/PHP.sample1/Sample_php/build" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries" />
+
+          <property name="ant.file.type.Ant-Test" value="file" />
+
+          <property name="ant.project.default-target" value="Main" />
+
+          <property name="ant.project.name" value="Ant-Test" />
+
+          <property name="java.version" value="1.6.0_65" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="junit.out" value="out/reports/junit" />
+
+          <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="MacRoman" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="50.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/Vinothini/Downloads/Old systemjenkins proj/PHP.sample1/Sample_php/build.xml" />
+
+          <property name="os.version" value="10.9.2" />
+
+          <property name="https.proxyPort" value="8080" />
+
+          <property name="ftp.proxyHost" value="192.168.3.1" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="20.65-b04-462" />
+
+          <property name="ant.library.dir" value="/Users/Vinothini/apache-ant-1.9.3/lib" />
+
+          <property name="java.awt.printerjob" value="apple.awt.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="apple.awt.CToolkit" />
+
+          <property name="user.home" value="/Users/Vinothini" />
+
+          <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="java.vendor.url" value="http://www.apple.com/" />
+
+          <property name="ant.file.Ant-Test" value="/Users/Vinothini/Downloads/Old systemjenkins proj/PHP.sample1/Sample_php/build.xml" />
+
+          <property name="java.vm.vendor" value="Apple Inc." />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner ibiz_selenium skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/Users/Vinothini/Downloads/Old systemjenkins proj/PHP.sample1/Sample_php/out/reports/junit/TEST-ibiz_selenium.txt formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Vinothini/Downloads/Old systemjenkins proj/PHP.sample1/Sample_php/out/reports/junit/TEST-ibiz_selenium.xml crashfile=/Users/Vinothini/Downloads/Old systemjenkins proj/PHP.sample1/Sample_php/junitvmwatcher3093517225918984834.properties propsfile=/Users/Vinothini/Downloads/Old systemjenkins proj/PHP.sample1/Sample_php/junit7826370177259017284.properties" />
+
+          <property name="java.class.path" value="/Users/Vinothini/Downloads/Old systemjenkins proj/PHP.sample1/Sample_php/build:/Users/Vinothini/Downloads/selenium-server-standalone-2.42.2.jar:/Users/Vinothini/apache-ant-1.9.3/lib/ant-launcher.jar:/Users/Vinothini/apache-ant-1.9.3/lib/ant.jar:/Users/Vinothini/apache-ant-1.9.3/lib/ant-junit.jar:/Users/Vinothini/apache-ant-1.9.3/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.3 compiled on December 23 2013" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="java.vm.specification.version" value="1.0" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/h_/dr8tcgbn7zbgt8gt74257xwh0000gr/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.apple.com/" />
+
+          <property name="http.proxyHost" value="192.168.3.1" />
+
+          <property name="mrj.build" value="11M4609" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
+
+          <property name="ftp.proxyPort" value="8080" />
+
+          <property name="mrj.version" value="1070.1.6.0_65-462" />
+
+          <property name="user.dir" value="/Users/Vinothini/Downloads/Old systemjenkins proj/PHP.sample1/Sample_php" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="basedir" value="/Users/Vinothini/Downloads/Old systemjenkins proj/PHP.sample1/Sample_php" />
+
+          <property name="haltonfailure" value="no" />
+
+          <property name="ant.java.version" value="1.6" />
+
+          <property name="ant.core.lib" value="/Users/Vinothini/apache-ant-1.9.3/lib/ant.jar" />
+
+          <property name="file.encoding" value="MacRoman" />
+
+          <property name="out" value="out" />
+
+          <property name="reports.out" value="out/reports" />
+
+          <property name="java.specification.version" value="1.6" />
+
+          <property name="src.dir" value="/Users/Vinothini/Downloads/Old systemjenkins proj/PHP.sample1/Sample_php/src" />
+
+          <property name="ant.project.invoked-targets" value="Main" />
+
+      </properties>
+
+      <testcase classname="ibiz_selenium" name="testUntitled" time="40.564" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>

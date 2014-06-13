@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Ibiz" default="Copy">
+    <property name="base.dir" value="/Applications/MAMP/htdocs/"/>
+	<!--property name="src.dir" value="Ibizapp"/-->
+        
+        <target name="delete">
+		<delete dir="${base.dir}/Ibizapp"/>
+	</target>
+	
+	<target name="init" depends="delete" >
+		<mkdir dir="${base.dir}/Ibizapp"/>
+	</target>
+	<target name="Copy" depends="init">
+		<copy todir="${base.dir}/Ibizapp">
+                    <fileset dir ="Ibizapp">
+                    </fileset>
+                </copy>
+		</target>
+	
+</project>
