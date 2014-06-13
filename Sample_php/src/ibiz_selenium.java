@@ -19,7 +19,7 @@ public class ibiz_selenium {
   @Before
   public void setUp() throws Exception {
     driver = new FirefoxDriver();
-    baseUrl = "http://localhost:8888/Ibizapp/login";
+    baseUrl = "http://192.168.3.7:8888/Ibizapp/login";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
@@ -55,7 +55,7 @@ public class ibiz_selenium {
     }
     driver.findElement(By.linkText("Contacts")).click();
     try {
-      assertEquals("i-Bizsuite-Contact", driver.getTitle());
+      assertEquals("i-Bizsuite-Cont", driver.getTitle());
     } catch (Error e) {
       verificationErrors.append(e.toString());
     }
